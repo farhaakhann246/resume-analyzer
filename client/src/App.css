@@ -1,0 +1,271 @@
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  width: min(1120px, 100% - 32px);
+  margin: 0 auto;
+  padding: 42px 0 24px;
+}
+
+.app-header {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 8px 0;
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  letter-spacing: -0.04em;
+}
+
+.app-header > p:last-child {
+  color: #aab5c8;
+  line-height: 1.7;
+}
+
+.eyebrow {
+  color: #8fb5ff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+.main-content {
+  display: grid;
+  gap: 28px;
+}
+
+.upload-panel,
+.analysis-dashboard {
+  background: #121a2b;
+  border: 1px solid #26344b;
+  border-radius: 18px;
+  padding: clamp(18px, 4vw, 30px);
+}
+
+.upload-panel h2,
+.analysis-dashboard h2 {
+  margin-top: 0;
+}
+
+.muted,
+.field-hint {
+  color: #aab5c8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.resume-form {
+  display: grid;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.form-group {
+  display: grid;
+  gap: 10px;
+}
+
+.form-group label {
+  font-weight: 700;
+}
+
+.form-group input[type="file"],
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #36465f;
+  border-radius: 10px;
+  background: #0c1322;
+  padding: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.form-group input:focus-visible,
+.form-group textarea:focus-visible,
+button:focus-visible {
+  outline: 2px solid #8fb5ff;
+  outline-offset: 3px;
+}
+
+.field-hint,
+.file-info {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #aab5c8;
+}
+
+.resume-form button {
+  border: 0;
+  border-radius: 10px;
+  padding: 14px 20px;
+  color: #081020;
+  background: #a8c5ff;
+  font-weight: 800;
+}
+
+.privacy-note,
+.disclaimer {
+  color: #aab5c8;
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+
+.error-message {
+  padding: 12px 14px;
+  border: 1px solid #87454f;
+  border-radius: 9px;
+  color: #ffb8c0;
+  background: #321923;
+}
+
+.loading-message {
+  color: #b7ceff;
+  line-height: 1.6;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.score-card {
+  border: 1px solid #2c3a51;
+  background: #0c1322;
+  border-radius: 12px;
+  padding: 18px;
+  min-width: 0;
+}
+
+.score-label {
+  color: #b8c5da;
+  font-size: 0.9rem;
+  margin-top: 0;
+}
+
+.score-value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin: 12px 0;
+}
+
+.score-value span {
+  font-size: 0.95rem;
+  color: #aab5c8;
+}
+
+.score-track {
+  height: 7px;
+  background: #29364a;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: #8fb5ff;
+  border-radius: inherit;
+}
+
+.score-description {
+  color: #aab5c8;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.result-section {
+  border-top: 1px solid #29364a;
+  padding: 22px 0;
+  overflow-wrap: anywhere;
+}
+
+.result-section h3 {
+  margin-top: 0;
+}
+
+.result-section p,
+.result-section li {
+  line-height: 1.7;
+}
+
+.result-section ul {
+  padding-left: 22px;
+}
+
+.skill-group {
+  margin: 20px 0;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  padding: 7px 10px;
+  border-radius: 999px;
+  background: #1b2a44;
+  border: 1px solid #354d71;
+  font-size: 0.85rem;
+}
+
+.experience-card {
+  padding: 16px;
+  margin: 12px 0;
+  border: 1px solid #29364a;
+  border-radius: 12px;
+}
+
+.experience-card h4 {
+  margin: 0 0 8px;
+}
+
+.experience-card .result-section {
+  padding-bottom: 0;
+}
+
+.result-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.mock-notice {
+  margin: 20px 0;
+  padding: 14px;
+  border: 1px solid #8a6b2b;
+  background: #302714;
+  border-radius: 10px;
+  color: #ffe3a1;
+  line-height: 1.6;
+}
+
+.app-footer {
+  text-align: center;
+  padding: 28px 0 0;
+  color: #8492a9;
+  font-size: 0.82rem;
+}
+
+@media (max-width: 700px) {
+  .app-shell {
+    width: min(100% - 20px, 1120px);
+    padding-top: 24px;
+  }
+
+  .score-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .result-columns {
+    grid-template-columns: 1fr;
+  }
+}
